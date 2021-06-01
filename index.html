@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title> ex2 </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<link rel="stylesheet" href="css/index.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/apiKey.js"></script>
+<script type="text/javascript" src="js/openweathermap.js"></script>
+<script type="text/javascript" src="js/foursquare.js"></script>
+</head>
+<body>
+<header>
+<h1>わくわく日本</h1>
+<ul id="gnb">
+	<li><a href="javascript:void(0);" data-city="Tokyo"><i class="fa fa-suitcase"></i>Tokyo</a></li>
+	<li><a href="javascript:void(0);" data-city="Yokohama"><i></i>Yokohama</a></li>
+	<li><a href="javascript:void(0);" data-city="Kyoto"><i></i>Kyoto</a></li>
+	<li><a href="javascript:void(0);" data-city="Osaka"><i></i>Osaka</a></li>
+	<li><a href="javascript:void(0);" data-city="Sapporo"><i></i>sapporo</a></li>
+	<li><a href="javascript:void(0);" data-city="Nagoya"><i></i>Nagoya</a></li>
+</ul>
+</header>
+<section>
+<article class="weahter">
+<div class='wrapper'>
+	<search>
+	<form>
+		<input class='searchbar transparent' id='search' type='text' placeholder='enter city'/>
+		<input class='button transparent' id='button' type="submit" value='GO'/>
+	</form>
+	</search>
+	<div class='panel'>
+		<h2 class='city' id='city'></h2>
+		<div class='weather' id='weather'>
+			<div class='group secondary'>
+				<h3 id='dt'></h3>
+				<h3 id='description'></h3>
+			</div>
+			<div class='group secondary'>
+				<h3 id='wind'></h3>
+				<h3 id='humidity'></h3>
+			</div>
+			<div class='temperature' id='temperature'>
+				<h1 class='temp' id='temp'>
+				<i id='condition'></i>
+				<span id='num'></span>
+				<a class='celsius' id='celsius' href="#">&deg;C</a>
+				</h1>
+			</div>
+			<div class='forecast' id='forecast'>
+			</div>
+		</div>
+	</div>
+</div>
+</article>
+<!-- weather end -->
+<article class="cafe">
+<div class="txt">
+	<a href="javascript:void(0);" class="modal-trigger" onclick="searchFoursquare('cafe')">
+	<i class="fas fa-coffee"></i>
+	<p>
+		<strong>Cafe</strong>
+	</p>
+	</a>
+</div>
+</article>
+<!-- cafe end -->
+<article>
+<div class="bg bg5">
+</div>
+</article>
+<!-- img 1 end -->
+<article>
+<div class="txt">
+	<a href="#" class="modal-trigger" onclick="searchFoursquare('Restaurant')">
+	<i class="fas fa-utensils"></i>
+	<p>
+		<strong>Restaurant</strong>
+	</p>
+	</a>
+</div>
+</article>
+<!-- restaurant end -->
+<article>
+<div class="txt">
+	<a href="#" class="modal-trigger" onclick="searchFoursquare('LandMark')">
+	<i class="fas fa-landmark"></i>
+	<strong>LandMark</strong>
+	</a>
+</div>
+</article>
+<!-- landMark end -->
+<article>
+<div class="bg bg5">
+</div>
+</article>
+<!-- img 2 end -->
+<article>
+<div class="txt">
+	<a href="#" class="modal-trigger" onclick="searchFoursquare('Hotel')">
+	<i class="fas fa-tree"></i>
+	<strong>Hotel</strong><br/>
+	</a>
+</div>
+</article>
+<!-- park end -->
+<article>
+<div class="txt">
+	<a href="#" class="modal-trigger" onclick="searchFoursquare('Play')">
+	<i class="fas fa-water"></i>
+	<strong>Play</strong><br/>
+	</a>
+</div>
+</article>
+<!-- play end -->
+<article>
+<div class="txt">
+	<a href="#" class="modal-trigger" onclick="searchFoursquare('Bar')">
+	<i class="fas fa-glass-cheers"></i>
+	<p>
+		<strong>Bar</strong><br/>
+	</p>
+	</a>
+</div>
+</article>
+<!-- bar end -->
+</section>
+</body>
+</html>

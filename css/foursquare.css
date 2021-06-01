@@ -1,0 +1,185 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #555;
+}
+img {
+    border: 0;
+}
+/* display none scrollbar */
+.modal-body {
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background: linear-gradient(to bottom, #c6b8ad 0%,#efedea 100%);
+    font-size: 0.875em;
+    color: #555;
+    line-height: 1.5;
+}
+.wrapper {
+    margin: 3.125em auto;
+    padding: 1em 5em;
+    max-width: 100%;
+}
+h1 {
+    color: #555;
+    text-align: center;
+}
+body {
+    color: #555;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h2 {
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+}
+h2.title {
+    border-bottom: 1px solid #555;
+    padding: 0 0 20px;
+}
+p {
+    font-weight: 300;
+}
+article {
+    overflow: hidden;
+    height: 55em;
+}
+.content {
+    float: left;
+}
+.left {
+    width: 75%;
+    height: 100vh;
+}
+.right {
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+}
+/* The Magic */
+/* .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+height: 6em;
+} */
+.accordion-item-content,
+.accordion-item-content {
+    height: 2em;
+    overflow: hidden;
+    transition: height 0.25s;
+}
+/* Aesthetic */
+.accordion {
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.accordion .accordion-item {
+    padding: 1em;
+    margin: 1em 0;
+    color: #000;
+    background: linear-gradient(to bottom, #a0c9cd 0%,#d0e4e6 100%);
+    border: 1px solid #555;
+    box-sizing: content-box;
+}
+.accordion .accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion .accordion-item:last-child {
+    margin-bottom: 0;
+}
+.accordion h1 {
+    margin: 0;
+}
+@media screen and(min-width:1024px) and(max-width:1279px) {
+    .content {
+        float: none;
+    }
+    article {
+        overflow: unset;
+        height: 55em;
+    }
+    .left {
+        height: 50vh;
+        width: 100%;
+    }
+    .right {
+        margin-top: 1em;
+        width: 100%;
+        height: 65%;
+    }
+    .accordion .accordion-item {
+        background: none;
+    }
+    .body {
+        background: none;
+    }
+    .wrapper {
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+@media screen and(max-width:1023px) {
+    .body {
+        background: #efedea;
+    }
+    .content {
+        float: none;
+    }
+    .left {
+        height: 50vh;
+        width: 100%;
+    }
+    .right {
+        margin-top: 1em;
+        width: 100%;
+        height: 37%;
+    }
+    .accordion .accordion-item {
+        background: none;
+    }
+    .body {
+        background: none;
+    }
+    .wrapper {
+        margin: 0 auto;
+        padding: 1em;
+    }
+}
+@media screen and(min-width:640px) and(max-width:779px) {
+    article {
+        height: 67em;
+    }
+}
+@media screen and(max-width:479px) {
+    article {
+        overflow: unset;
+        height: 55em;
+    }
+    .wrapper {
+        padding: 1em;
+        max-width: 100%;
+    }
+}
