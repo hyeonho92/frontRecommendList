@@ -130,13 +130,16 @@ $(function () {
             let forecast = [];
             let length = data.list.length;
             for (let i = 1; i < length; i++) {
-                forecast.push({
-                    date: new Date(data.list[i].dt * 1000).toString().split(' ')[0],
-                    celsius: {
-                        high: Math.round(data.list[i].main.temp_max),
-                        low: Math.round(data.list[i].main.temp_min),
-                    },
-                });
+                let currDate = new Date();
+                if (currDate < new Date(data.list[i].dt * 1000)) {
+                    forecast.push({
+                        date: new Date(data.list[i].dt * 1000).toString().split(' ')[0],
+                        celsius: {
+                            high: Math.round(data.list[i].main.temp_max),
+                            low: Math.round(data.list[i].main.temp_min),
+                        },
+                    });
+                }
             }
 
             function toCelsius() {
