@@ -208,7 +208,7 @@ article .bg1 .weekWeather li span {
 }
 /* weather */
 .wrapper {
-    width: 50%;
+    width: 53%;
     margin: 5% auto;
 }
 .searchbar,
@@ -564,7 +564,7 @@ article .bg1 .weekWeather li span {
         text-align: center;
     }
     .wrapper {
-        width: 76%;
+        width: 90%;
     }
     article .bg1 span {
         font-size: 120px;
