@@ -176,7 +176,6 @@ article .txt strong {
     margin-bottom: 20px;
     transition: all 1s;
 }
-/* article:hover .txt { background: linear-gradient(to bottom, #b2effc 0%,#57c1eb 100%);	color:#fff;} */
 article:hover .txt i {
     right: 0;
     opacity: 0.5;
