@@ -1,11 +1,11 @@
 // INIT
-var openWeatherKey = "5b588e54d5298904faca5d62dc75cf30";
+var openWeatherKey = "";
 var openWeatherValue = "openWeatherApiKey";
 
-var clientIdKey = "QPI300X1KSWASF0L2GLU5E3UWQH1SF005OAC2QQYPTM5TMKK";
+var clientIdKey = "";
 var clientIdValue = "openWeatherApiKey";
 
-var clientSecretKey = "TJUVN1EHKLN21BZYRAK4TMDZ3VENLTQDF1R23AETM2BE1OWF";
+var clientSecretKey = "";
 var clientSecretValue = "openWeatherApiKey";
 
 
